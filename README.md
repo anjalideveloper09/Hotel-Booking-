@@ -1,1 +1,1 @@
-hotelbookwithme.netlify.app
+https://hotelbookwithme.netlify.app/
