@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="content navbar">
+            <div class="nav-logo">
+                <a href="#" class="logo"><span>H</span>otel</a>
+            </div>
+
+            <div class="nav-link">
+                <ul class="navicon">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#room">Room</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><button class="nav-form"  onclick="window.location.href= 'form.html'">BOOK NOW</button></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="content">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+            <img src="essentia-luxury-hotel.jpg" alt="">
+            <div class="text">
+                <h1>Hotels for moment <br> in emotions</h1>
+                <p>The Perfect Base For You</p>
+                <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                </div>
+            </div>
+            </div>
+            <div class="item">
+            <img src="hotel room5.jpg" alt="">
+            <div class="text">
+              <h1>Hotels for moment <br> in emotions</h1>
+              <p>The Perfect Base For You</p>
+                <div class="flex">
+                <button class="primary-btn">READ MORE</button>           
+                </div>
+            </div>
+            </div>
+            <div class="item">
+            <img src="suite room.jpg" alt="">
+            <div class="text">
+              <h1>Hotels for moment <br> in emotions</h1>
+              <p>The Perfect Base For You</p>
+                <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <section class="about first" id="aboutus">
+    <div class="container flex">
+        <div class="left">
+            <div class="heading">
+                <h1>Welcome</h1>
+                <h2>To Our Hotel</h2>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime consequuntur est excepturi accusantium doloremque aperiam fugiat mollitia ullam, aliquam odit veritatis repudiandae sunt ratione at amet, hic quo similique.
+                Amet harum eum fugiat repellendus tempora delectus incidunt nobis illum, atque recusandae magni ipsum nulla, ullam est laborum error id dignissimos illo vero debitis officiis facilis. Tempora autem eaque consequuntur.
+                Pariatur harum numquam fuga, dicta aut laudantium distinctio cum omnis in eius quod excepturi doloribus explicabo inventore dolores eveniet et nobis quia quisquam, molestiae enim impedit? 
+                 
+            </p>
+            <!-- <button class="primary-btn">About Us</button> -->
+        </div>
+        <div class="right">
+            <img src="hotel room4.jpg" alt="">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container flex">
+      <div class="left">
+        <img src="hotelnextpage.jpg" alt="">
+      </div>
+      <div class="right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maxime consequuntur est excepturi accusantium doloremque aperiam fugiat mollitia ullam, aliquam odit veritatis repudiandae sunt ratione at amet, hic quo similique.
+            Amet harum eum fugiat repellendus tempora delectus incidunt nobis illum, atque recusandae magni ipsum nulla, ullam est laborum error id dignissimos illo vero debitis officiis facilis. Tempora autem eaque consequuntur.
+            Pariatur harum numquam fuga, dicta aut laudantium distinctio cum omnis in eius quod excepturi doloribus explicabo inventore dolores eveniet et nobis quia quisquam, molestiae enim impedit? 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+        <button class="primary-btn">About Us</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  
+
+  <section class="offer mtop" id="room">
+    <div class="container">
+      <div class="heading">
+        <!-- <h1>EXCLUSIVE OFFERS </h1> -->
+        <h2>ROOMS AND AMENITIES </h2>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="delux room.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From <i class="fa-solid fa-indian-rupee-sign"></i>2500/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="suite room.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Suite Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From <i class="fa-solid fa-indian-rupee-sign"></i>4000/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="ac room.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>AC Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From <i class="fa-solid fa-indian-rupee-sign"></i>1000/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="locker.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Locker</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From <i class="fa-solid fa-indian-rupee-sign"></i>300/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="img">
+             <img src="Contact-us.png" alt="">
+        </div>
+        <form action="" id="contactForm">
+          <div class="alert">Your message sent</div>
+          <div class="inputbox" >
+                <input type="text" placeholder="name" id="name">
+                <input type="email" placeholder="email" id="email">
+            </div>
+            <div class="inputbox">
+                <input type="number" placeholder="number" id="number">
+                <input type="text" placeholder="subject" id="subject">
+            </div>
+            <textarea placeholder="message" name="" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="script.js"></script>
+
+  </section>
+
+  <footer>
+    <div class="foot-panel1">
+        <a href="#home" style="color: white; text-decoration: none;">Back to Top</a>
+    </div>
+
+    <div class="foot-panel2">
+        <ul>
+            <h3>Branch Location</h3>
+            <a>India</a>
+            <a>USA</a>
+            <a>Japan</a>
+            <a>London</a>
+            <a>Singapore</a>
+            <a>Germany</a>
+        </ul>
+        <ul>
+            <h3>Quick Link</h3>
+            <a href="#home">Home</a>
+            <a href="#aboutus">About</a>
+            <a href="#room">Room</a>
+            <a href="#contact">Contact</a>
+        </ul>
+        <ul>
+            <h3>Follow Us</h3>
+            <a><i class="fa-brands fa-square-instagram"></i></a>
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-linkedin"></i></a>
+            <a><i class="fa-brands fa-twitter"></i></a>
+        </ul>
+    </div>
+
+    <div class="nav-logo">
+        <a href="#" class="logo"><span>H</span>otel</a>
+    </div>
+
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Conditions of Use</a>
+            <a>Privacy Notices</a>
+            <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+            © 1996-2023, Hotel.com, Inc. or its affiliates
+        </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

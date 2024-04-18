@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+  <h1>Hotel Booking Registration Form</h1>
+  <form id="bookingForm">
+    <h2 class="heading">Customer Info</h2>
+    <label for="customerName">Customer Name:</label>
+    <input type="text" id="customerName" placeholder="Full Name" required>
+
+    <label for="checkInDate">Check-in Date:</label>
+    <input type="date" id="checkInDate"  required>
+
+    <label for="totalDays">Total No of Days:</label>
+    <input type="number" id="totalDays" required>
+
+    <label for="totalPersons">Total No of Persons:</label>
+    <input type="number" id="totalPersons" required>
+
+    <h2 class="heading">Room Information</h2>
+    <label for="roomType">Room Type:</label>
+    <select id="roomType">
+      <option value="Delux Room" >Delux Room</option>
+      <option value="Suite Room">Suite Room</option>
+    </select>
+
+    <h2 class="heading">Amenities:</h2>
+    <div class="checkbox">
+        <img src="ac room.jpg" alt="ac room" width="150px">
+        <label for="ac" class="amenities">AC</label>
+        <input type="checkbox" id="ac" >
+
+        <img src="locker.jpg" alt="locker" width="150px">
+        <label for="locker" class="amenities">Locker</label>
+        <input type="checkbox" id="locker" >
+    </div>
+
+    <h2 class="heading">Advance Payment</h2>
+    <label for="advanceAmount">Advance Amount:</label>
+    <input type="number" id="advanceAmount" required>
+
+    <div class="note">
+      <h4>*Additional Charges</h4>
+      <p>Upto 2 People: No Change in Cost</p>
+      <p>Per Day Cost for Extra Person: 1000/-</p>
+    </div>
+
+    <input type="submit" value="Submit" id="submitBtn">
+
+    <div id="popupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="pop-icon">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <h2>Registration Successful</h2>
+        <p>Thank you for registering!</p>
+      </div>
+    </div>
+
+    <script src="form.js"></script>
+
+    <div id="resultsSection" style="display: none;"></div>
+    <h2>Calculated Amounts</h2>
+    <p id="totalRoomCost">Total Room Cost: <span id="roomCostAmount"></span></p>
+    <p id="totalAmenitiesCost">Total Amenities Cost: <span id="amenitiesCostAmount"></span></p>
+    <p id="totalCost">Total Cost: <span id="totalCostAmount"></span></p>
+    <h2>Balance Amount</h2>
+    <p id="balance">Balance: <span id="balanceAmount"></span> </p>  
+  </form>
+</body>
+</html>
+
